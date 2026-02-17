@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.githubtrendingrepos"
+    namespace = "com.example.githubstarredrepos"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.githubtrendingrepos"
+        applicationId = "com.example.githubstarredrepos"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
