@@ -1,7 +1,5 @@
 package com.example.githubstarredrepos.presentation.ui.components
 
-package com.example.githubstarredrepos.presentation.ui.components
-
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible

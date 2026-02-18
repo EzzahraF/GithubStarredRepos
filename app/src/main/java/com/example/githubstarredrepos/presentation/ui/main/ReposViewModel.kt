@@ -1,4 +1,4 @@
-package com.example.githubstarredrepos
+package com.example.githubstarredrepos.presentation.ui.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
