@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- AVATAR DU PROPRIÉTAIRE -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageViewAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CircleImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <!-- NOM DU PROPRIÉTAIRE -->
+        <TextView
+            android:id="@+id/textViewOwnerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintStart_toEndOf="@id/imageViewAvatar"
+            app:layout_constraintTop_toTopOf="@id/imageViewAvatar"
+            app:layout_constraintEnd_toStartOf="@id/imageViewStar"
+            tools:text="google" />
+
+        <!-- NOM DU REPO -->
+        <TextView
+            android:id="@+id/textViewRepoName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            app:layout_constraintStart_toStartOf="@id/textViewOwnerName"
+            app:layout_constraintTop_toBottomOf="@id/textViewOwnerName"
+            app:layout_constraintEnd_toStartOf="@id/imageViewStar"
+            tools:text="awesome-android-project" />
+
+        <!-- ICÔNE ÉTOILE -->
+        <ImageView
+            android:id="@+id/imageViewStar"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_star"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toStartOf="@id/textViewStars"
+            app:layout_constraintTop_toTopOf="@id/textViewRepoName"
+            app:layout_constraintBottom_toBottomOf="@id/textViewRepoName" />
+
+        <!-- NOMBRE D'ÉTOILES -->
+        <TextView
+            android:id="@+id/textViewStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/star_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textViewRepoName"
+            app:layout_constraintBottom_toBottomOf="@id/textViewRepoName"
+            tools:text="1.2k" />
+
+        <!-- DESCRIPTION DU REPO -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:maxLines="3"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewAvatar"
+            tools:text="This is an awesome open-source Android project with many contributors." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

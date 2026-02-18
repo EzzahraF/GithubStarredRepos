@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">GithubStarredRepos</string>
+    <string name="app_name">GitHub Trending Repos</string>
+    <string name="no_description">No description available</string>
+    <string name="loading">Loading repositories…</string>
+    <string name="toolbar_title">Trending Repositories</string>
 </resources>
