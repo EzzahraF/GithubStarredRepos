@@ -7,6 +7,4 @@ data class OwnerDto(
     val login: String,
     @SerializedName("avatar_url")
     val avatarUrl: String
-
-
 )

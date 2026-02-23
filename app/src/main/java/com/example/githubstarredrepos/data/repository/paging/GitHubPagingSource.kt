@@ -1,4 +1,6 @@
 package com.example.githubstarredrepos.data.repository.paging
+
+import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.githubstarredrepos.data.remote.api.GitHubApiService
@@ -12,9 +14,12 @@ class GitHubPagingSource(
     private val createdAfter: String
 ) : PagingSource<Int, Repository>() {
 
+    private val TAG = "GitHubPagingSource"
+
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Repository> {
 
         val currentPage = params.key ?: 1
+        Log.d(TAG, "Loading page: $currentPage")
 
         return try {
 
@@ -26,6 +31,7 @@ class GitHubPagingSource(
             )
 
             val repositories = response.items.toDomain()
+            Log.d(TAG, "Loaded ${repositories.size} repos for page $currentPage")
 
             LoadResult.Page(
                 data    = repositories,
@@ -34,10 +40,13 @@ class GitHubPagingSource(
             )
 
         } catch (exception: IOException) {
+            Log.e(TAG, "Network error on page $currentPage: ${exception.message}")
             LoadResult.Error(exception)
         } catch (exception: HttpException) {
+            Log.e(TAG, "HTTP error on page $currentPage: ${exception.message}")
             LoadResult.Error(exception)
         } catch (exception: Exception) {
+            Log.e(TAG, "Unknown error on page $currentPage: ${exception.message}")
             LoadResult.Error(exception)
         }
     }

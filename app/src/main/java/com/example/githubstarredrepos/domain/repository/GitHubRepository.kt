@@ -5,5 +5,5 @@ import com.example.githubstarredrepos.domain.model.Repository
 import kotlinx.coroutines.flow.Flow
 interface GitHubRepository {
     fun getStarredRepositories(createdAfter: String): Flow<PagingData<Repository>>
-
+    suspend fun getRepoDetails(owner: String, name: String): Repository
 }

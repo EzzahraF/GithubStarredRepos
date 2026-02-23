@@ -5,23 +5,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/background_light"
     tools:context=".MainActivity">
 
-    <!-- TOOLBAR EN HAUT -->
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/primary"
+        android:background="?attr/colorPrimary"
         android:elevation="4dp"
-        app:title="@string/toolbar_title"
+        app:title="Trending Repositories"
         app:titleTextColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- LISTE DES REPOS -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewRepos"
         android:layout_width="match_parent"
@@ -30,13 +28,14 @@
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/item_repository" />
 
-    <!-- LOADING INITIAL (visible seulement au premier chargement) -->
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"

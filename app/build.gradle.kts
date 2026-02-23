@@ -78,6 +78,12 @@ dependencies {
     // Glide
     implementation("com.github.bumptech.glide:glide:4.16.0")
     kapt("com.github.bumptech.glide:compiler:4.16.0")
+    // DataStore pour sauvegarder les préférences
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+    // Navigation Component (pour naviguer vers Settings)
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
 
     // Testing
     testImplementation("junit:junit:4.13.2")

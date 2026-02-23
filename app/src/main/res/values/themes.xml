@@ -1,17 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Base.Theme.GithubStarredRepos" parent="Theme.Material3.Light.NoActionBar">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primary_dark</item>
-        <item name="android:statusBarColor">@color/primary_dark</item>
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- THÈME CLAIR (PAR DÉFAUT)                                -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+
+    <style name="Base.Theme.GithubStarredRepos.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryDark">@color/blue_primary_dark</item>
+        <item name="android:statusBarColor">@color/blue_primary_dark</item>
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
     </style>
 
-    <style name="Theme.GithubStarredRepos" parent="Base.Theme.GithubStarredRepos" />
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- THÈME SOMBRE                                             -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+
+    <style name="Base.Theme.GithubStarredRepos.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryDark">@color/blue_primary_dark</item>
+        <item name="android:statusBarColor">@color/blue_primary_dark</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorSecondary">@color/text_secondary_dark</item>
+    </style>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- THÈME PAR DÉFAUT (APPLICATION)                           -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+
+    <style name="Theme.GithubStarredRepos" parent="Base.Theme.GithubStarredRepos.Light" />
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- STYLES COMMUNS                                           -->
+    <!-- ═══════════════════════════════════════════════════════ -->
 
     <style name="CircleImageView">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+    <!-- Thème par défaut (Bleu) -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryVariant">@color/blue_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
 
+    <!-- Variante Verte -->
+    <style name="AppTheme.Green" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Variante Violette -->
+    <style name="AppTheme.Purple" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Variante Orange -->
+    <style name="AppTheme.Orange" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/orange_primary</item>
+        <item name="colorPrimaryVariant">@color/orange_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Variante Rouge -->
+    <style name="AppTheme.Red" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/red_primary</item>
+        <item name="colorPrimaryVariant">@color/red_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Variante Teal -->
+    <style name="AppTheme.Teal" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorPrimaryVariant">@color/teal_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
 </resources>

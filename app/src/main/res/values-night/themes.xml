@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ce thème s'applique automatiquement en mode sombre système -->
+    <style name="Theme.GithubStarredRepos" parent="Base.Theme.GithubStarredRepos.Dark" />
+</resources>

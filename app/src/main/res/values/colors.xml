@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ─── COULEURS BLEUES (Défaut) ──────────────────────── -->
+    <color name="blue_primary">#1976D2</color>
+    <color name="blue_primary_dark">#1565C0</color>
+    <color name="blue_primary_light">#BBDEFB</color>
+
+    <!-- ─── COULEURS VERTES ────────────────────────────────── -->
+    <color name="green_primary">#4CAF50</color>
+    <color name="green_primary_dark">#388E3C</color>
+    <color name="green_primary_light">#C8E6C9</color>
+
+    <!-- ─── COULEURS VIOLETTES ──────────────────────────────── -->
+    <color name="purple_primary">#9C27B0</color>
+    <color name="purple_primary_dark">#7B1FA2</color>
+    <color name="purple_primary_light">#E1BEE7</color>
+
+    <!-- ─── COULEURS ORANGES ────────────────────────────────── -->
+    <color name="orange_primary">#FF9800</color>
+    <color name="orange_primary_dark">#F57C00</color>
+    <color name="orange_primary_light">#FFE0B2</color>
+
+    <!-- ─── COULEURS ROUGES ──────────────────────────────────── -->
+    <color name="red_primary">#F44336</color>
+    <color name="red_primary_dark">#D32F2F</color>
+    <color name="red_primary_light">#FFCDD2</color>
+
+    <!-- ─── COULEURS TEAL ─────────────────────────────────────── -->
+    <color name="teal_primary">#009688</color>
+    <color name="teal_primary_dark">#00796B</color>
+    <color name="teal_primary_light">#B2DFDB</color>
+
+    <!-- ─── COULEURS COMMUNES ─────────────────────────────────── -->
+    <color name="background_light">#F5F5F5</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_primary_light">#212121</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_light">#757575</color>
+    <color name="text_secondary_dark">#B0B0B0</color>
+    <color name="star_color">#FFA000</color>
+    <color name="divider_light">#E0E0E0</color>
+    <color name="divider_dark">#3A3A3A</color>
+    <!-- ─── COULEURS COMMUNES (LIGHT MODE) ────────────────────── -->
     <color name="primary">#1976D2</color>
     <color name="primary_dark">#1565C0</color>
     <color name="background">#F5F5F5</color>
-    <color name="white">#FFFFFF</color>
+
+    <!-- ─── COULEURS DE TEXTE ──────────────────────────────────── -->
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#757575</color>
-    <color name="star_color">#FFA000</color>
+
     <color name="divider">#E0E0E0</color>
+    <color name="yellow_gold">#FFC107</color>
+
 </resources>

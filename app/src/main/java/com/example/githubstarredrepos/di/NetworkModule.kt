@@ -15,7 +15,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class NetworkModule {
-    private  val BASE_URL = "https://api.github.com/"
+    private val BASE_URL = "https://api.github.com/"
 
     @Provides
     @Singleton

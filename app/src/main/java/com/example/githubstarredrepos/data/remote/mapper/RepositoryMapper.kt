@@ -9,7 +9,9 @@ fun RepositoryDto.toDomain(): Repository {
         description = this.description ?: "No description available",
         stars       = this.stars,
         ownerUsername  = this.owner.login,
-        ownerAvatarUrl = this.owner.avatarUrl
+        ownerAvatarUrl = this.owner.avatarUrl,
+        language=this.language,
+        forks=this.forks
     )
 }
 

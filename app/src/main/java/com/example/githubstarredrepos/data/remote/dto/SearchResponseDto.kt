@@ -9,4 +9,4 @@ data class SearchResponseDto(
     @SerializedName("items")
     val items: List<RepositoryDto>
 )
-//quand on utilise xml ou json dans kotlin ( et explique moi xml x'est quoi a quoi sert et pourquoi on l'utilse
+

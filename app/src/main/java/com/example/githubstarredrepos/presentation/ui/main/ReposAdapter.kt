@@ -11,7 +11,9 @@ import com.example.githubstarredrepos.R
 import com.example.githubstarredrepos.databinding.ItemRepositoryBinding
 import com.example.githubstarredrepos.domain.model.Repository
 
-class ReposAdapter : PagingDataAdapter<Repository, ReposAdapter.RepositoryViewHolder>(REPO_COMPARATOR) {
+class ReposAdapter(
+    private val onItemClick:(Repository) -> Unit
+) : PagingDataAdapter<Repository, ReposAdapter.RepositoryViewHolder>(REPO_COMPARATOR) {
 
     // CRÉATION DE LA VUE
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RepositoryViewHolder {
@@ -26,7 +28,15 @@ class ReposAdapter : PagingDataAdapter<Repository, ReposAdapter.RepositoryViewHo
     // ─── REMPLISSAGE DE LA VUE ───────────────────────────────────
     override fun onBindViewHolder(holder: RepositoryViewHolder, position: Int) {
         val repo = getItem(position)
-        repo?.let { holder.bind(it) }
+
+        repo?.let { repoItem ->
+            holder.bind(repoItem)
+
+            // Listener
+            holder.itemView.setOnClickListener {
+                onItemClick(repoItem)
+            }
+        }
     }
 
     // ─── VIEW HOLDER ─────────────────────────────────────────────

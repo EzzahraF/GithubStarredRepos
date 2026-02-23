@@ -12,5 +12,9 @@ data class RepositoryDto(
     @SerializedName("stargazers_count")
     val stars: Int,
     @SerializedName("owner")
-    val owner: OwnerDto
+    val owner: OwnerDto,
+    @SerializedName("language")
+    val language: String?,
+    @SerializedName("forks")
+    val forks:Int
 )

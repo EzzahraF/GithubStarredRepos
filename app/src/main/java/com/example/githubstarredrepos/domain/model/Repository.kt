@@ -6,5 +6,7 @@ data class Repository(
     val description: String,
     val stars: Int,
     val ownerUsername: String,
-    val ownerAvatarUrl: String
+    val ownerAvatarUrl: String,
+    val language: String?, 
+    val forks: Int   
 )
