@@ -56,11 +56,15 @@ Kotlin	Langage principal (100% Kotlin).
 ## Installation
 
 1- Clonez le dépôt :
-    ```
-    git clone https://github.com/VOTRE_USERNAME/GithubTrendingReposMVVM.git
-    ```
+  
+```
+git clone https://github.com/VOTRE_USERNAME/GithubTrendingReposMVVM.git
+```
+
 2- Ouvrez le projet avec Android Studio. 
+
 3- Laissez Gradle synchroniser les dépendances. 
+
 4- Lancez l'application sur un émulateur (API 24+) ou un appareil réel. 
 
 ## Concepts Clés Implémentés
