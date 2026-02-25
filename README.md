@@ -11,8 +11,8 @@ Une application Android moderne qui affiche les dépôts GitHub les plus étoil�
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <img src="screenshots/home.png" width="250" alt="Accueil Theme Clair: List of repositories"/>
     <img src="screenshots/home_2.png" width="250" alt="Accueil Theme Sombre: List of repositories"/>
-    <img src="screenshots/details.png.png" width="250" alt="Repository details"/>
-    <img src="screenshots/detail_1.png" width="250" alt="Repository details"/>
+    <img src="screenshots/details.png" width="250" alt="Repository details"/>
+    <img src="screenshots/detail_1.png" width="250" alt="Repository detail"/>
 </div>
 
 ## Fonctionnalités
