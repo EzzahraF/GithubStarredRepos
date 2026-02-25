@@ -13,7 +13,6 @@ import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class RepoDetailActivity : BaseActivity() {
-
     private lateinit var binding: ActivityRepoDetailBinding
     private val viewModel: RepoDetailViewModel by viewModels()
 
@@ -37,7 +36,6 @@ class RepoDetailActivity : BaseActivity() {
                         val repo = state.repo
 
                         // --- Remplissage des vues avec les BONS IDs ---
-
                         // Nom du repo
                         binding.tvRepoName.text = repo.name
 
